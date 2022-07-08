@@ -10,8 +10,8 @@ public class CartItemDTO {
 	
 	
 	public CartItemDTO() {
-		
 	}
+	
 	public Integer getId() {
 		return id;
 	}

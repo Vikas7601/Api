@@ -33,4 +33,14 @@ public class AuthenticationServices {
 		 
 	}
 
+	public void authenticate(String token) throws AuthenticationFailException {
+		if(Objects.isNull(token)) {
+			throw new AuthenticationFailException("token is not present");
+			}
+		if(Objects.isNull(getUser(token))) {
+			throw new AuthenticationFailException("token not valid");
+		}
+		
+	}
+
 }
