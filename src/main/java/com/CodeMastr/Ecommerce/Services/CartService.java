@@ -63,7 +63,7 @@ public class CartService {
 	public void deleteCartItem(Integer cartItemId, Users user) {
 		//item id belongs to user
 		Optional<Cart> optionalCart =cartRepo.findById(cartItemId);
-		if(optionalCart.isEmpty()) {
+		if(optionalCart.isPresent()) {
 			throw new  CustomException("Cart Item Id is Invalid " + cartItemId );
 		}
 		Cart cart = optionalCart.get();

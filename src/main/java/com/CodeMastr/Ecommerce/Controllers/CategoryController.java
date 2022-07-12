@@ -1,6 +1,5 @@
 package com.CodeMastr.Ecommerce.Controllers;
 
-import java.net.http.HttpResponse;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
